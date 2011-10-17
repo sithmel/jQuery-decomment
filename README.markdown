@@ -17,11 +17,11 @@ using
     $('#removethis').decomment();
 
 
-doWhenMinWidth
+decommentWhenVisible
 ===============
-Do something when the width of the window became bigger than x.
+Decomment and call a function when an element is visible.
 
-    $.doWhenMinWidth(minwidth, callback);
+    $.decommentWhenVisible(selector,callback);
 
-The calback run only once when the minwidth is exceeded.
-
+The calback run only once.
+Very useful using media queries for mobile. See index.html for an example.
