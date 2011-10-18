@@ -13,13 +13,12 @@ $.fn.decomment = function (){
 };
 
 // launch only once when it found the selector
-$.decommentWhenVisible = function (selector,callback){
+$.doWhenVisible = function (selector,callback){
     var onResizeDo = function (){
         var $node = $(selector + ":visible");
         if ($node.length){
-            $node.decomment();
             if (callback){
-                callback();
+                callback.apply($node);
             }
             $(window).unbind('resize',onResizeDo);
         }

@@ -17,11 +17,11 @@ using
     $('#removethis').decomment();
 
 
-decommentWhenVisible
+doWhenVisible
 ===============
-Decomment and call a function when an element is visible.
+Call a function when an element is visible (checking every time the window is resized).
 
-    $.decommentWhenVisible(selector,callback);
+    $.doWhenVisible(selector,callback);
 
 The calback run only once.
 Very useful using media queries for mobile. See index.html for an example.

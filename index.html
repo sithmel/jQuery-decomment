@@ -8,7 +8,8 @@
 
 $(document).ready(function (){
 
-    $.decommentWhenVisible('.decommentMQ',function (){
+    $.doWhenVisible('.decommentMQ',function (){
+        this.decomment();
         console.log('decommented!!!');
     });
 
